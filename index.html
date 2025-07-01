@@ -4,14 +4,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.css">
     <title>India Presentation</title>
+    <style>
+        .reveal {
+            background: linear-gradient(135deg, #ff9933 0%, #ffffff 50%, #138808 100%);
+        }
+        .reveal .slides section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            margin: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            border: 3px solid #ff9933;
+        }
+        .reveal h2 {
+            color: #138808;
+            font-family: 'Georgia', serif;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .reveal ul li {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .reveal .fragment {
+            transition: all 0.5s ease-in-out;
+        }
+        .reveal .fragment.visible {
+            transform: scale(1.02);
+        }
+        .image-container {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .reveal img {
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .reveal img:hover {
+            transform: scale(1.05);
+        }
+        .slide-number {
+            color: #ff9933 !important;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
             <!-- Slide 1: Introduction -->
-            <section>
+            <section data-background-gradient="linear-gradient(135deg, #ff9933 0%, #ffffff 50%, #138808 100%)">
                 <h2>India: An Overview</h2>
-                <div style="text-align: center; margin-bottom: 30px;">
+                <div class="image-container" style="text-align: center; margin-bottom: 30px;">
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/320px-Flag_of_India.svg.png" alt="Indian Flag" style="width: 200px; margin: 0 20px;">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Indian_Parliament.jpg/320px-Indian_Parliament.jpg" alt="Indian Parliament" style="width: 200px; margin: 0 20px;">
                 </div>
@@ -24,9 +74,9 @@
             </section>
 
             <!-- Slide 2: Culture & Heritage -->
-            <section>
+            <section data-background-gradient="linear-gradient(135deg, #8B4513 0%, #DAA520 50%, #FF6347 100%)">
                 <h2>Rich Cultural Heritage</h2>
-                <div style="text-align: center; margin-bottom: 30px;">
+                <div class="image-container" style="text-align: center; margin-bottom: 30px;">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Taj_Mahal%2C_Agra%2C_India_edit3.jpg/320px-Taj_Mahal%2C_Agra%2C_India_edit3.jpg" alt="Taj Mahal" style="width: 200px; margin: 0 20px;">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Classical_dance_of_india.jpg/320px-Classical_dance_of_india.jpg" alt="Indian Classical Dance" style="width: 200px; margin: 0 20px;">
                 </div>
@@ -39,9 +89,9 @@
             </section>
 
             <!-- Slide 3: Economy & Modern India -->
-            <section>
+            <section data-background-gradient="linear-gradient(135deg, #4169E1 0%, #00CED1 50%, #32CD32 100%)">
                 <h2>Economic Powerhouse</h2>
-                <div style="text-align: center; margin-bottom: 30px;">
+                <div class="image-container" style="text-align: center; margin-bottom: 30px;">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bangalore_Science_City.jpg/320px-Bangalore_Science_City.jpg" alt="Bangalore IT Hub" style="width: 200px; margin: 0 20px;">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/PSLV-XL_C25_carrying_Mars_Orbiter_Mission_lifting_off_on_November_5%2C_2013.jpg/240px-PSLV-XL_C25_carrying_Mars_Orbiter_Mission_lifting_off_on_November_5%2C_2013.jpg" alt="Indian Space Mission" style="width: 200px; margin: 0 20px;">
                 </div>
@@ -62,7 +112,12 @@
             controls: true,
             progress: true,
             center: true,
-            transition: 'slide'
+            transition: 'convex',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            slideNumber: true,
+            fragments: true,
+            fragmentInURL: true
         });
     </script>
 </body>
