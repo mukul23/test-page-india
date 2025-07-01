@@ -11,17 +11,21 @@
         .reveal .slides section {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
-            padding: 40px;
-            margin: 20px;
+            padding: 30px;
+            margin: 15px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.2);
             border: 3px solid #ff9933;
+            height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .reveal h2 {
             color: #138808;
             font-family: 'Georgia', serif;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            margin-bottom: 30px;
-            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-size: 1.8em;
         }
         .reveal ul li {
             color: #2c3e50;
@@ -60,47 +64,59 @@
         <div class="slides">
             <!-- Slide 1: Introduction -->
             <section data-background-gradient="linear-gradient(135deg, #ff9933 0%, #ffffff 50%, #138808 100%)">
-                <h2>India: An Overview</h2>
-                <div class="image-container" style="text-align: center; margin-bottom: 30px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/320px-Flag_of_India.svg.png" alt="Indian Flag" style="width: 200px; margin: 0 20px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Indian_Parliament.jpg/320px-Indian_Parliament.jpg" alt="Indian Parliament" style="width: 200px; margin: 0 20px;">
+                <h2>India Overview</h2>
+                <div style="display: flex; align-items: center; gap: 30px;">
+                    <div style="flex: 2;">
+                        <ul style="font-size: 22px; line-height: 1.6; margin: 0;">
+                            <li class="fragment">World's largest democracy - 1.4B people</li>
+                            <li class="fragment">Located in South Asia</li>
+                            <li class="fragment">28 states, 8 union territories</li>
+                            <li class="fragment">Capital: New Delhi</li>
+                        </ul>
+                    </div>
+                    <div class="image-container" style="flex: 1; text-align: center;">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/320px-Flag_of_India.svg.png" alt="Indian Flag" style="width: 120px; margin-bottom: 15px; display: block;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Indian_Parliament.jpg/320px-Indian_Parliament.jpg" alt="Parliament" style="width: 120px; display: block;">
+                    </div>
                 </div>
-                <ul style="font-size: 28px; line-height: 1.8;">
-                    <li class="fragment">World's largest democracy with over 1.4 billion people</li>
-                    <li class="fragment">Located in South Asia, bordered by Pakistan, China, and Bangladesh</li>
-                    <li class="fragment">Federal republic with 28 states and 8 union territories</li>
-                    <li class="fragment">Capital: New Delhi, Financial hub: Mumbai</li>
-                </ul>
             </section>
 
             <!-- Slide 2: Culture & Heritage -->
             <section data-background-gradient="linear-gradient(135deg, #8B4513 0%, #DAA520 50%, #FF6347 100%)">
-                <h2>Rich Cultural Heritage</h2>
-                <div class="image-container" style="text-align: center; margin-bottom: 30px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Taj_Mahal%2C_Agra%2C_India_edit3.jpg/320px-Taj_Mahal%2C_Agra%2C_India_edit3.jpg" alt="Taj Mahal" style="width: 200px; margin: 0 20px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Classical_dance_of_india.jpg/320px-Classical_dance_of_india.jpg" alt="Indian Classical Dance" style="width: 200px; margin: 0 20px;">
+                <h2>Cultural Heritage</h2>
+                <div style="display: flex; align-items: center; gap: 30px;">
+                    <div style="flex: 2;">
+                        <ul style="font-size: 22px; line-height: 1.6; margin: 0;">
+                            <li class="fragment">22 official languages</li>
+                            <li class="fragment">Birthplace of 4 major religions</li>
+                            <li class="fragment">UNESCO sites: Taj Mahal, Red Fort</li>
+                            <li class="fragment">5000+ years of traditions</li>
+                        </ul>
+                    </div>
+                    <div class="image-container" style="flex: 1; text-align: center;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Taj_Mahal%2C_Agra%2C_India_edit3.jpg/320px-Taj_Mahal%2C_Agra%2C_India_edit3.jpg" alt="Taj Mahal" style="width: 120px; margin-bottom: 15px; display: block;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Classical_dance_of_india.jpg/320px-Classical_dance_of_india.jpg" alt="Dance" style="width: 120px; display: block;">
+                    </div>
                 </div>
-                <ul style="font-size: 28px; line-height: 1.8;">
-                    <li class="fragment">Home to 22 official languages, Hindi and English most widely spoken</li>
-                    <li class="fragment">Birthplace of four major religions: Hinduism, Buddhism, Jainism, and Sikhism</li>
-                    <li class="fragment">UNESCO World Heritage Sites: Taj Mahal, Red Fort, Ajanta Caves</li>
-                    <li class="fragment">Ancient traditions in art, music, dance, and philosophy dating back 5000 years</li>
-                </ul>
             </section>
 
             <!-- Slide 3: Economy & Modern India -->
             <section data-background-gradient="linear-gradient(135deg, #4169E1 0%, #00CED1 50%, #32CD32 100%)">
-                <h2>Economic Powerhouse</h2>
-                <div class="image-container" style="text-align: center; margin-bottom: 30px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bangalore_Science_City.jpg/320px-Bangalore_Science_City.jpg" alt="Bangalore IT Hub" style="width: 200px; margin: 0 20px;">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/PSLV-XL_C25_carrying_Mars_Orbiter_Mission_lifting_off_on_November_5%2C_2013.jpg/240px-PSLV-XL_C25_carrying_Mars_Orbiter_Mission_lifting_off_on_November_5%2C_2013.jpg" alt="Indian Space Mission" style="width: 200px; margin: 0 20px;">
+                <h2>Economic Power</h2>
+                <div style="display: flex; align-items: center; gap: 30px;">
+                    <div style="flex: 2;">
+                        <ul style="font-size: 22px; line-height: 1.6; margin: 0;">
+                            <li class="fragment">5th largest economy globally</li>
+                            <li class="fragment">IT hub - "Silicon Valley of Asia"</li>
+                            <li class="fragment">Leading spices & pharma producer</li>
+                            <li class="fragment">Space missions: Mars, Moon</li>
+                        </ul>
+                    </div>
+                    <div class="image-container" style="flex: 1; text-align: center;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bangalore_Science_City.jpg/320px-Bangalore_Science_City.jpg" alt="IT Hub" style="width: 120px; margin-bottom: 15px; display: block;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/PSLV-XL_C25_carrying_Mars_Orbiter_Mission_lifting_off_on_November_5%2C_2013.jpg/240px-PSLV-XL_C25_carrying_Mars_Orbiter_Mission_lifting_off_on_November_5%2C_2013.jpg" alt="Space" style="width: 120px; display: block;">
+                    </div>
                 </div>
-                <ul style="font-size: 28px; line-height: 1.8;">
-                    <li class="fragment">World's 5th largest economy by nominal GDP</li>
-                    <li class="fragment">Major IT and software services hub, often called "Silicon Valley of Asia"</li>
-                    <li class="fragment">Leading producer of spices, tea, textiles, and pharmaceuticals</li>
-                    <li class="fragment">Space program achievements: Mars mission, moon landing, satellite launches</li>
-                </ul>
             </section>
         </div>
     </div>
